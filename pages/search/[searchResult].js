@@ -22,8 +22,7 @@ export default function SearchPage() {
     return () => {
       setSearchCleaners([]);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [searchResult]);
 
   return (
     <>
