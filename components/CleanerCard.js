@@ -5,25 +5,21 @@ import Card from 'react-bootstrap/Card';
 import Link from 'next/link';
 import { deleteCleaner } from '../api/cleanerData';
 
-function CleanerCard({ cleanerObj, onUpdate }) {
+export default function CleanerCard({ cleanerObj, onUpdate }) {
   const deleteThisCleaner = () => {
     if (window.confirm(`Remove ${cleanerObj.name}?`)) {
       deleteCleaner(cleanerObj.firebaseKey).then(() => onUpdate());
     }
   };
+  console.warn(cleanerObj, 'cleanerObj');
 
   return (
     <Card style={{ width: '18rem', margin: '10px' }}>
-      <Card.Img variant="top" src={cleanerObj.image} alt={cleanerObj.name} style={{ height: '400px' }} />
+      <Card.Img variant="top" src={cleanerObj?.image} alt={cleanerObj?.name} style={{ height: '400px' }} />
       <Card.Body>
-        <Card.Title>{cleanerObj.name}</Card.Title>
-        <p className="card-text bold">{cleanerObj.role}</p>
-        {/* DYNAMIC LINK TO VIEW THE BOOK DETAILS  */}
-        <Link href={`/book/${cleanerObj.firebaseKey}`} passHref>
-          <Button variant="primary" className="m-2">VIEW</Button>
-        </Link>
-        {/* DYNAMIC LINK TO EDIT THE BOOK DETAILS  */}
-        <Link href={`/book/edit/${cleanerObj.firebaseKey}`} passHref>
+        <Card.Title>{cleanerObj?.name}</Card.Title>
+        <p className="card-text bold">{cleanerObj?.role}</p>
+        <Link href={`/cleaner/edit/${cleanerObj.firebaseKey}`} passHref>
           <Button variant="info">EDIT</Button>
         </Link>
         <Button variant="danger" onClick={deleteThisCleaner} className="m-2">

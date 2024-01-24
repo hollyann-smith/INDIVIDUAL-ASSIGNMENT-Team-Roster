@@ -1,5 +1,6 @@
 import React from 'react';
+import CleanerForm from '../../components/forms/CleanerForm';
 
-export default function New() {
-  return <div>New!</div>;
+export default function NewCleaner() {
+  return <CleanerForm />;
 }
