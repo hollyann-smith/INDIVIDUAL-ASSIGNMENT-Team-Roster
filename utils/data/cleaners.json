@@ -1,0 +1,26 @@
+{
+  "-MiBsBKGWFEU-yluJkL-": {
+    "author_id": "-MiBt86VzkC-EGmJnxjm",
+    "firebaseKey": "-MiBsBKGWFEU-yluJkL-",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/91+NBrXG-PL.jpg",
+    "uid": "b6CuKIsL9uULjZt3OgE3c1PgKVI2",
+    "name": "Sir",
+    "role": "Duster"
+  },
+  "-MiBsknNSQ6aBG1-2lQS": {
+    "author_id": "-MiBsfuTafbEQ7eAULxV",
+    "firebaseKey": "-MiBsknNSQ6aBG1-2lQS",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/A1agLFsWkOL.jpg",
+    "uid": "b6CuKIsL9uULjZt3OgE3c1PgKVI2",
+    "name": "Man",
+    "role": "Sweeper"
+  },
+  "-MiBwAF5wOY00AYJm7cR": {
+    "team_id": "-MiBw4tCvNZd23yTVDQw",
+    "firebaseKey": "-MiBwAF5wOY00AYJm7cR",
+    "uid": "b6CuKIsL9uULjZt3OgE3c1PgKVI2",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61GSqXVhhKL.jpg",
+    "name": "Lady",
+    "role": "Mopper"
+  }
+}
